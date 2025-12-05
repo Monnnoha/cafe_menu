@@ -1,0 +1,236 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #faf7f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #3b2f2f;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #271f1f;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.75rem 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fce8c5;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+  max-width: 1100px;
+  margin: 1.5rem auto 2rem;
+  padding: 0 1rem;
+}
+
+/* Chef's Special */
+.chefs-special {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+.chefs-special h2 {
+  margin-bottom: 1rem;
+}
+
+.special-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.chefs-special img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.special-text h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.special-text p {
+  margin-bottom: 0.3rem;
+}
+
+.special-text .price {
+  font-weight: bold;
+  color: #b45309;
+}
+
+/* Menu of the Day */
+.menu-of-day {
+  background: #ffe9c9;
+  border-left: 5px solid #f59e0b;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.menu-of-day h2 {
+  margin-bottom: 0.5rem;
+}
+
+.menu-of-day ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-of-day .note {
+  font-size: 0.9rem;
+  color: #7c2d12;
+}
+
+/* Menu Section */
+.menu-section {
+  margin-bottom: 2rem;
+}
+
+.menu-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Flexbox + Horizontal Scroll for Categories */
+.menu-categories {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Hide ugly scrollbars in some browsers (optional) */
+.menu-categories::-webkit-scrollbar {
+  height: 8px;
+}
+.menu-categories::-webkit-scrollbar-track {
+  background: #f3e7d7;
+}
+.menu-categories::-webkit-scrollbar-thumb {
+  background: #c4a27d;
+  border-radius: 4px;
+}
+
+/* Individual Category */
+.menu-category {
+  min-width: 280px; /* this forces horizontal scroll when many categories */
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #ead7c5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.menu-category h3 {
+  border-bottom: 1px solid #f1e2d2;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+/* Menu Items */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.menu-item .details h4 {
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.menu-item .details p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.menu-item .price {
+  white-space: nowrap;
+  font-weight: bold;
+  color: #b45309;
+  align-self: center;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.contact-section p {
+  margin-bottom: 0.4rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #3b2f2f;
+  color: #fce8c5;
+  font-size: 0.9rem;
+}
